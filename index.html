@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="enter block">
+      <label for="">Введите сумму:</label>
+      
+
+      <input type="number" oninput="moneyConvert()" id="inpt" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+      <select name="" id="slct" onchange="moneyConvert()">
+        <option value="1" selected>KZT</option>
+        <option value="2">USD</option>
+        <option value="3">EUR</option>
+      </select>
+    </div>
+
+    <div class="tenge block">
+      <label for=""><b>KZT (tenge)</b></label>
+      
+      <input type="text" disabled value="-" id="kzt">
+    </div>
+
+    <div class="usd block">
+      <label for=""><b>USD (dollar)</b></label>
+
+      <input type="text" disabled id="usd">
+    </div>
+    <div class="euro block">
+      <label for=""><b>EUR (euro)</b></label>
+      
+      <input type="text" disabled id="euro">
+    </div>
+
+  </div>
+  <script src="scrypt.js"></script>
+</body>
+</html
